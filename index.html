@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sameer Pahwa</title>
+<meta name="description" content="Computer Engineering student building data and software tools for trading and fintech">
+<style>
+:root {
+  --bg: #ffffff; --fg: #142033; --muted: #5b6678; --line: #e3e7ee;
+  --accent: #1f5bd8; --card: #f6f8fb; --chip: #e8eefc;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d1420; --fg: #e8edf5; --muted: #9aa6b8; --line: #223047;
+          --accent: #7aa2ff; --card: #131d2e; --chip: #1c2a44; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+       font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 56px 16px 40px; }
+header h1 { font-size: clamp(2rem, 6vw, 2.8rem); margin: 0; letter-spacing: -0.02em; }
+.tagline { color: var(--accent); font-size: 1.15rem; margin: 6px 0 10px; }
+.links { color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+section { margin-top: 44px; }
+h2 { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
+     border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 0 0 16px; }
+h3 { font-size: 1.05rem; margin: 0; }
+.row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.meta, .when { color: var(--muted); font-size: .9rem; margin: 2px 0 6px; }
+ul { margin: 6px 0 0; padding-left: 20px; } li { margin: 3px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.tags span, .skill span { display: inline-block; background: var(--chip); color: var(--fg); border-radius: 999px;
+     padding: 2px 10px; font-size: .8rem; margin: 6px 6px 0 0; }
+.code { margin: 10px 0 0; font-weight: 600; font-size: .9rem; }
+.job { padding: 4px 0 14px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+.job:last-child { border-bottom: 0; }
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.skill h4 { margin: 0; font-size: .95rem; } .skill p { margin: 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Sameer Pahwa</h1>
+  <p class="tagline">Computer Engineering student building data and software tools for trading and fintech</p>
+  <div class="links"><span>Dubai, UAE</span><a href="mailto:smrpahwa@gmail.com">smrpahwa@gmail.com</a><a href="https://www.linkedin.com/in/sameer-pahwa-b23095314/" rel="noopener">LinkedIn</a><a href="https://github.com/Sameerpahwa123" rel="noopener">GitHub</a></div>
+</header>
+<section><h2>About</h2><p>Computer Engineering student at the University of Wollongong in Dubai and former quant research intern. I build working data and software tools around trading data. My projects reconcile figures against source data, use automated tests, and state what remains untested. I&#x27;m looking for data analytics, software development or related CS roles and internships in trading and fintech.</p></section>
+<section><h2>Projects</h2><div class="grid"><article class="card">
+  <div class="row"><h3>Portfolio data server</h3></div>
+  <p class="meta">Python · MCP · SQLite · Nov 2026</p>
+  <ul><li>12-tool MCP server that lets an AI assistant query brokerage records, with a dashboard and scheduled daily updates.</li><li>Reconciled calculated positions against broker statements to a $0.00 residual on both accounts; 18 automated tests pass.</li></ul>
+  <p class="code"><a href="https://github.com/Sameerpahwa123/portfolio-data-server" rel="noopener">View code on GitHub →</a></p>
+  <p class="tags"><span>Data</span><span>Fintech</span></p>
+</article><article class="card">
+  <div class="row"><h3>Market research and backtesting study</h3></div>
+  <p class="meta">Python · Nov 2026</p>
+  <ul><li>Reviewed 22 backtests and 4,010 trades and found about 60% were quick losses.</li><li>Documented that the figure depends on a chosen 30-day threshold.</li></ul>
+  
+  <p class="tags"><span>Data</span><span>Trading</span></p>
+</article><article class="card">
+  <div class="row"><h3>SwingSafe AI</h3></div>
+  <p class="meta">UOWD Tech Club MCP Hackathon · 2nd place · 2026</p>
+  <ul><li>Multi-agent Bitcoin trading system using MCP and OpenAI, with signal, sentiment and risk-monitoring agents.</li></ul>
+  
+  <p class="tags"><span>AI agents</span><span>Trading</span></p>
+</article><article class="card">
+  <div class="row"><h3>StockBattle</h3></div>
+  <p class="meta">2025</p>
+  <ul><li>Designed and deployed a real-time multiplayer stock market simulation built for up to 100 players per session.</li></ul>
+  
+  <p class="tags"><span>Software</span></p>
+</article><article class="card">
+  <div class="row"><h3>Second brain: personal knowledge base</h3></div>
+  <p class="meta">Python · SQLite · Nov 2026</p>
+  <ul><li>Local, searchable database of 1,406 records from messages, notes, project folders and coding sessions.</li><li>Masks keys before storage and treats stored content as data, not instructions.</li></ul>
+  <p class="code"><a href="https://github.com/Sameerpahwa123/second-brain" rel="noopener">View code on GitHub →</a></p>
+  <p class="tags"><span>Software</span><span>AI agents</span></p>
+</article></div></section>
+<section><h2>Hackathons</h2><ul><li>Finalist, Careem Builders &#x27;26 Hack To The Future (Nov 2026)</li><li>Backtest Pro, a no-code backtesting app (Zayed University Innovation Hackathon, 2025)</li><li>Node Flow, school traffic routing (University of Birmingham hackathon, 2025)</li></ul></section>
+<section><h2>Experience</h2><div class="job">
+  <div class="row"><h3>Marketing &amp; Outreach Board Member</h3><span class="when">Jul 2026 – present</span></div>
+  <p class="meta">Engineers Australia UAE Chapter</p>
+  
+</div><div class="job">
+  <div class="row"><h3>Quant Research Assistant (Internship)</h3><span class="when">Nov 2025 – Jul 2026</span></div>
+  <p class="meta">TensorStreet Labs · Remote</p>
+  <ul><li>Quantitative research and market analysis in a remote team.</li><li>Presented internal products and macro research to outside investors and former Optiver professionals, and brought their feedback back to the team.</li></ul>
+</div><div class="job">
+  <div class="row"><h3>Executive Member</h3><span class="when">Feb 2025 – present</span></div>
+  <p class="meta">UOWD Finance Society · Dubai</p>
+  <ul><li>Led outreach to The Block to build an external partnership.</li><li>Coordinated planning for a flagship finance workshop with Client First Capital Dubai.</li></ul>
+</div><div class="job">
+  <div class="row"><h3>Student Ambassador (Part-time)</h3><span class="when">Jun 2025 – Mar 2026</span></div>
+  <p class="meta">Clyra · Remote/Dubai</p>
+  <ul><li>Promoted an academic study platform to students from Grade 6 to Master&#x27;s, and collected user feedback to inform product improvements.</li></ul>
+</div></section>
+<section><h2>Skills</h2><div class="skills"><div class="skill"><h4>Data</h4><p><span>SQL</span><span>SQLite</span><span>Pandas</span><span>Data reconciliation</span><span>Automated testing</span></p></div><div class="skill"><h4>Development</h4><p><span>Python</span><span>JavaScript</span><span>C/C++</span><span>MATLAB</span><span>Git</span></p></div><div class="skill"><h4>AI tools</h4><p><span>Claude API</span><span>OpenAI API</span><span>Model Context Protocol (MCP)</span><span>Multi-agent systems</span></p></div></div></section>
+<section><h2>Education</h2>
+  <div class="row"><h3>Bachelor of Engineering in Computer Engineering</h3><span class="when">2024 – 2028 (expected)</span></div>
+  <p class="meta">University of Wollongong in Dubai</p><p>Relevant coursework: Algorithms and Data Structures</p>
+</section>
+<footer>Updated 10 Nov 2026</footer>
+</main>
+</body>
+</html>
